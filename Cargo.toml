@@ -1,0 +1,19 @@
+[workspace]
+members = [
+    'examples/printerdemo_mcu',
+    'mcu-board-support',
+]
+
+default-members = [
+    'examples/printerdemo_mcu',
+    'mcu-board-support',
+]
+
+resolver = "2"
+
+[profile.release]
+lto = true
+panic = "abort"
+
+[profile.dev]
+panic = "abort"
