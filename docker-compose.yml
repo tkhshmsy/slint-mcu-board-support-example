@@ -1,0 +1,12 @@
+services:
+  rust:
+    # image: rust:latest
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - .:/slint-mcu-board-support-example
+    working_dir: /slint-mcu-board-support-example
+    environment:
+      - USER=user
+
